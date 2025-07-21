@@ -36,7 +36,7 @@ days = st.number_input(
 # User-defined keywords input
 user_keywords_input = st.text_area(
     "Enter Keywords (separated by commas or new lines):",
-    value="Affair Relationship Stories, Reddit Update, Reddit Relationship Advice", # Default value for example
+    value="", # Default value is now an empty string
     help="Provide keywords to search for. Separate multiple keywords with commas or new lines."
 )
 
