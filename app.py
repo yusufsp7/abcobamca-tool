@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 # For deployment on Streamlit Cloud, it is highly recommended to use st.secrets.
 # Create a file named .streamlit/secrets.toml in your GitHub repository with the content:
 # API_KEY="YOUR_ACTUAL_API_KEY_HERE"
-API_KEY = st.secrets["AIzaSyDnAbJ6G1mHfgjaa7gM_eNWvjQw95T-j8w"] 
+API_KEY = st.secrets["API_KEY"]
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 YOUTUBE_VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
 YOUTUBE_CHANNEL_URL = "https://www.googleapis.com/youtube/v3/channels"
