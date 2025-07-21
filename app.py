@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 # YouTube API Key
 # IMPORTANT: Replace "Enter your API Key here" with your actual YouTube Data API v3 key.
 # You can obtain this from the Google Cloud Console.
-API_KEY = "AIzaSyDnAbJ6G1mHfgjaa7gM_eNWvjQw95T-j8w" 
+API_KEY = st.secrets["AIzaSyDnAbJ6G1mHfgjaa7gM_eNWvjQw95T-j8w"]
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 YOUTUBE_VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
 YOUTUBE_CHANNEL_URL = "https://www.googleapis.com/youtube/v3/channels"
