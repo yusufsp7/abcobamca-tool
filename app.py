@@ -60,7 +60,7 @@ if st.button("Fetch Data", help="Click to start searching for videos."):
     if not keywords:
         st.error("Please enter at least one keyword before fetching data.")
     else:
-        try:
+        try: # Ensure this 'try' is correctly indented
             # Calculate date range for the API query
             start_date = (datetime.utcnow() - timedelta(days=int(days))).isoformat("T") + "Z"
             all_results = []
@@ -187,12 +187,12 @@ if st.button("Fetch Data", help="Click to start searching for videos."):
                         f"**Subscribers:** {result['Subscribers']:,}" # Format subscribers with commas
                     )
                     st.write("---")
-        else:
-            st.warning("No results found for channels with fewer than 3,000 subscribers based on your criteria.")
+            else: # Ensure this 'else' is correctly indented relative to its 'if'
+                st.warning("No results found for channels with fewer than 3,000 subscribers based on your criteria.")
 
-        except requests.exceptions.RequestException as req_err:
+        except requests.exceptions.RequestException as req_err: # Ensure this 'except' is correctly indented relative to 'try'
             st.error(f"Network or API request error: {req_err}. Please check your internet connection and API key.")
-        except Exception as e:
+        except Exception as e: # Ensure this 'except' is correctly indented relative to 'try'
             st.error(f"An unexpected error occurred: {e}")
 
 st.markdown("---")
